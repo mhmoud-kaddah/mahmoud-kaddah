@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewpot" content="width=device-width, initial-scale=1">
+<title> Maram Yaghi</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="bootstrap.js">
+<style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+ font-size: 16px;
+}
+#header-nav{
+ background-color: rgb(234, 233, 235);
+ height: 20px;
+}
+.navbar{
+margin-bottom: 0%;
+}
+
+.navbar-brand h1{
+    color: rgb(9, 9, 9);
+    font-size: 1.5em;
+    text-decoration: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(24, 24, 25);
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a, .navbar-brand a:hover, .navbar-brand a:visited{
+    text-decoration: none;
+    font-size: large;
+}
+#nav-list a{
+    text-align: center;
+}
+#nav-list a:hover{
+    color: black;
+    font-size: larger;
+}
+h1{
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+#main-content img{
+    position: relative;
+}
+#main-content {
+    position: relative;
+  
+    margin-left: 20px;
+}
+
+.hello-photo img{
+    border-radius: 35px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+.category-tile{
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+.flip-card {
+  background-color: transparent;
+  width: 299px;
+  height: 299px;
+  perspective: 1000px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border: 1px solid black;
+    overflow: hidden;
+    margin: 0 auto 15px;
+
+}
+
+.flip-card-back {
+  background-color: #4f5153;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back a{
+    color: white;
+}
+.flip-card-back a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+.flip-card-back h1:hover{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+.row-1{
+    background-color: #bbb;
+}
+.menu-item h1{
+    text-align: center;
+}
+.menu-item p{
+text-align: center;
+}
+@media(min-width: 1200px){
+.hello-photo img{
+    margin-left:200px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+
+
+}
+
+@media(min-width: 768px)and(max-width:991px){
+
+}
+
+
+@media(max-width:767px){
+
+}
+.menu-item-photo{
+    overflow: hidden;
+    margin: 15px;
+
+}
+#foto2{
+    margin-left: 400px;
+}
+#foto3{
+    margin-left: 100px;
+}
+.row-3 {
+    background-color:rgb(233, 234, 234);
+}
+.row-4{
+    background-color: rgb(233, 234, 234);
+}
+#menu-footer{
+    text-align: center;
+    margin-top: 15px;
+}
+#contact-footer{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #010101;
+}
+
+a:hover{
+    text-decoration: none;
+
+    font-size: larger;
+    color: #c6c2cd;
+}
+.row-footer{
+    background-color: #bbb;
+}
+.row-5{
+    background-color: rgb(251, 251, 243);
+}
+</style>
+</head>
+<body>
+    <header>
+
+        <nav id="header-nav" class="navbar navbar-default" style="    margin-bottom: auto">
+            <div class="container" id="main-content"  >
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Mahmoud Kaddah</h1></a>
+                    </div>
+                    <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" 
+                            data-target="#collapsable-naV visible-xs " >
+                           <span class="sr-only">Toggle</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                </div>
+                <div id="collapsable-naV" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right visible-lg visible-md visible-sm ">
+                        <li><a href="#about-me" >About me</a></li>
+                        <li><a href="#experience" >Experience </a></li>
+                        <li><a href="#education" >Education</a></li>
+                        <li><a href="#Portfolio-categories-title" >Assignments</a></li>
+                        <li><a href="#footer" >Contact</a></li>
+    
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="main-content" >
+        <section class="row row-1">
+            <img src="https://media.licdn.com/dms/image/v2/D5616AQHd_hQg5QlQwA/profile-displaybackgroundimage-shrink_350_1400/B56ZY2dzZqHQAg-/0/1744670506737?e=1750896000&v=beta&t=my-vQ_YsLz71sdYIIOaqksOWA5HJ_K64lW512Y3UHd8">
+            <div class="row">
+  
+            <div class="menu-item col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                <h1 class="menu-item-title"> Hello, I am Mahmoud.</h1><br>
+                   <p>Persistent and ambitious, always striving for the best!.</p><hr style="color: black; ">
+                   <p>I am an artist and teacher with years of experience in drawing and teaching to both beginners and professionals in the fields of fine arts and architecture.</p>
+            </div>
+            <div class="menu-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="hello-photo">
+                    <img src="https://media.licdn.com/dms/image/v2/D5635AQEW0erWBK6n2Q/profile-framedphoto-shrink_400_400/B56ZY2ZtyzGoAc-/0/1744669433711?e=1745787600&v=beta&t=mJyGxmX-fC5095m9cod5bbJJlg27rxp79ffD_Og7Eew"  alt="Item">
+                </div>
+            </div>
+        </section>
+
+        <section class=" row row-2">
+            <h2 id="Portfolio-categories-title"  class="text-center">Drawing</h2>
+            <div class="text-center">
+                <p>A little about my work</p>
+            </div>
+            <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/736x/ba/17/d6/ba17d6eab6930344ed35afaa37fa24c7.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/736x/f5/d1/7b/f5d17bfb8807e0ef970b26ca9241dbb5.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/474x/63/d6/ce/63d6ce39be50d99ad5bbd0926761fe41.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/736x/52/ba/ce/52bace24bffecc09b9a4b775316999d2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/474x/28/6e/b6/286eb618ef3e5d3da1db6570a96c3ccb.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/474x/c9/6d/63/c96d63525e8326c9f9f1a1d9953ce07f.jpg" alt="Avatar" style="width:300px;height:300px; text-align: center;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/474x/98/b5/86/98b586855335cf7e30ef974a48e38c34.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a><img src="https://i.pinimg.com/736x/db/6f/76/db6f76bd91e8a04e229d3a3785436554.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </a>
+                  </div>
+                  <div class="flip-card-back">
+                    <a> <h1>M.K</h1> 
+                        <p>potret</p> 
+                        <p>see more,,</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="row row-3">
+            <div class="menu-item-tile col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                
+                    <div class="menu-item-photo">
+                        <img id= foto1 class="img-responsive" src="https://i.pinimg.com/736x/14/40/3b/14403bd06622e110a65e5eedfddf5095.jpg"  alt="Item" width="300px">
+                    </div>
+                    <div class="menu-item-photo">
+                        <img id= foto2 class="img-responsive" src="https://i.pinimg.com/736x/24/5a/63/245a634056e9caa8f0f2d555234ae5a2.jpg"  alt="Item" width="200px">
+                    </div>
+                    <div class="menu-item-photo">
+                        <img id="foto3" class="img-responsive" src="https://i.pinimg.com/736x/80/25/4d/80254df76156e8af8faa509a1fc3ab04.jpg"  alt="Item" width="250px">
+                    </div>
+                
+            </div>
+            <div class="menu-item-description col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-right: 30px ">
+                <div >
+                    <h3 id="experience" class="menu-item-title">Experience</h3>
+                    <div class="menu-item-details">
+                        <ul>
+                            <li><h4>Portrait Artist,Freelance,Syria.</h4>
+                                <p>  Pencil Atelier for Arts, Salamieh (Syria)
+                                  ▪ Draw portrait faces using pencils and charcoal upon client request in order
+                                  to be a unique gifts in special occasions.
+                                  ▪ Help social volunteers in their campaings through drawing designing
+                                  many paintaings which express their messages includuing logos, posters
+                                  and wall paintings.</p>
+                              <h6> March 2017 - Current</h6>
+                            </li>
+
+                            <li><h4> Teacher,Freelance,Salamyia</h4>
+                                <p>Teach students from 5 the main principals for draw and establish a good
+                                  basis for their lines.
+                                  •
+                                  Teach teenagers drawing portrait methods in addition to good express for
+                                  different raw materials in their paintings.
+                                  •
+                                  Prepare and teach students who want to enroll in fine arts and
+                                  architecture faculties.
+                                  •
+                                  Hold workshops to make creative handiworks by reusing materials. •
+                                  Helping students prepare for the HBO entrance exam.</p>
+                              <h6> March 2017 - Current</h6>
+                            </li>
+
+                            <li><h4>Supervisor,Agyal Foundation.</h4>
+                                <p> CEO Supervisor • •
+                                  Art Team Supervisor •
+                                  Photographer •
+                                  Dealing with special cases (autism, deafness and muteness, mental
+                                  retardation)                                  .</p>
+                                <h6>August 2016 - June 2017</h6>
+                            </li>
+
+                            <li><h4> Volunteer Worker.</h4>
+                                <p> •
+                                  Design cartoons characters for the health promotion activity with the
+                                  children.
+                                  •
+                                  Design paintings wall about health issues during the social campaigns. •
+                                  Work closely with volunteers during painting activities and presenting
+                                  plays about health issues..</p>
+                              <h6>May 2015 - March 2016</h6>
+                            </li>
+                            <li><h4> Computer Repairer.</h4>
+                                <p> Sagoun computers,Salamyia.</p>
+                              <h6>May 2012 - May 2016</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <section class=" row row-2">
+                <h2 id="Portfolio-categories-title"  class="text-center">Photography</h2>
+                <div class="text-center">
+                    <p>A little about my work</p>
+                </div>
+                <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <a><img src="https://i.pinimg.com/474x/ba/f1/91/baf1919ff6a53205718c0b1c0432e766.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </a>
+                      </div>
+                      <div class="flip-card-back">
+                        <a> <h1>M.K</h1> 
+                            <p>potret</p> 
+                            <p>see more,,</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <a><img src="https://i.pinimg.com/736x/c9/3b/90/c93b90c7b771fa104ed2bb09742b800f.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </a>
+                      </div>
+                      <div class="flip-card-back">
+                        <a> <h1>M.K</h1> 
+                            <p>potret</p> 
+                            <p>see more,,</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <a><img src="https://i.pinimg.com/736x/a1/db/57/a1db573b3aa637a2d2e501a63685597e.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </a>
+                      </div>
+                      <div class="flip-card-back">
+                        <a> <h1>M.K</h1> 
+                            <p>potret</p> 
+                            <p>see more,,</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-4 col-sm-6 col-xs-12" >
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <a><img src="https://i.pinimg.com/474x/f9/60/ba/f960ba15abdbb46c2ed15127a499cf71.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </a>
+                      </div>
+                      <div class="flip-card-back">
+                        <a> <h1>M.K</h1> 
+                            <p>potret</p> 
+                            <p>see more,,</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+        </section>
+        <section class="row row-4">
+            <div class="menu-item-description col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+                <div>
+                    <h3 id="education" class="menu-item-title">Education</h3>
+                    <div class="menu-item-details">
+                        <ul style=" padding-right: 25px;">
+                            <li><h4>Bachelor in Law, Al Baath University.</h4>
+                                <p> I have stopped my study since the beginning of Syrian crisis because of
+                                  difficult circum.</p>
+                              <h6> 09/2007 – 07/2013</h6>
+                            </li>
+                            <li><h4> General Certificate of Education, Syria, Salamyie.</h4>
+                                <p>Educational Directorate, Hama (Syria).</p>
+                              <h6>06/2006 – 07/2007</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-tiles col-lg-6 col-md-6 col-sm-6 col-xs-6" style=" padding: 0;">
+                <div class="row" >
+                    <div class="menu-item-photo">
+                        <img id= foto1 class="img-responsive" src="https://i.pinimg.com/736x/21/0a/58/210a583fa682a4d2958c09341610d612.jpg"  alt="Item" width="300px">
+                    </div>
+                    <div class="menu-item-photo">
+                        <img id= foto2 class="img-responsive" src="https://i.pinimg.com/736x/0f/e1/56/0fe1569634b9e19db8df105fc87e443b.jpg"  alt="Item" width="200px">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="row row-5">
+
+            <div id="about-me" class="menu-item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 style="margin-top: 10px;"> About me,,</h1><hr>
+                <p class="menu-item-details" style="margin-top: 30px;"> 
+                  I am an artist and teacher with years of experience in drawing and teaching to both beginners and professionals in the fields of fine arts and architecture. This has given me the ability to be creative, discover the flaws in art, and harness the secrets of its beauty. I use these skills in conjunction with continuous learning and daily visual nourishment to present art in all its forms to society through an educational art organization I established in 2017. My deep understanding of the beauty and randomness of nature through my professional photography work has strengthened my desire to constantly explore this creativity and create a parallel to it. I am currently looking for a position where I can gain more experience and add it to my previous expertise to develop, disseminate, and teach art more widely.. 
+                </p>
+            </div>
+        </section>
+    </div>
+
+    
+
+    <footer id="footer" class="panel-footer ">
+        <div class="row row-footer" >
+            <section id="menu-footer" class="col-md-12 col-sm-12 col-xs-12 ">
+                <span style="font-weight: bold;">Mahmoud Kaddah</span><br>
+                <p style="font-size: 12px;">thank you for visiting me!</p>
+            </section>
+            <section id="contact-footer" class="col-md-12 col-sm-12 col-xs-12 ">
+                <span style="font-weight: bold;">contact</span><br>
+                <p style="font-size: 12px;"><a href="mailto:mahmoudpencil@gmail.com"><strong>E-mail</strong></a></p>
+                <p style="font-size: 12px;"><a href="https://www.linkedin.com/in/mahmoud-kaddah-694a4635b/"><strong>linkedIn</strong> </a></p>
+                <p style="font-size: 12px;"><a href="tel:(+963)991926267"><strong>Telephone</strong></a> </p>
+                <p style="font-size: 12px;"><a href="https://www.instagram.com/mahmoud__h__kaddah/?igsh=MXdwM2F3OXlyczRvZQ%3D#"><strong>Instagram</strong></a> </p>
+
+
+
+
+            </section>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
